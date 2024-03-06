@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --hero-color: green;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+ 
+.conatiner{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1100px;
+    
+}
+
+/* nav section - start */
+.nav-bar ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+li{
+    margin: 10px;
+   list-style: none;
+    color: var(--hero-color);
+    
+}
+
+.nav-section{
+    background-color: rgb(222, 222, 231);
+    position: sticky;
+    padding: 0.3rem 1rem;
+}
+/* nav section - end  */
+
+/* hero section - start */
+.hero-content{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3em;
+    
+}
