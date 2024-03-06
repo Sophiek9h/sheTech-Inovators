@@ -360,8 +360,8 @@ body{
 
 .slider_section .detail-box .btn-box .btn-1:hover {
   background-color: transparent;
-  border-color: var(--color1);
-  color: var(--color1);
+  border-color: #ffffff;
+  color: #ffffff;
 }
 
 .slider_section .detail-box .btn-box .btn-2 {
@@ -489,7 +489,7 @@ body{
 .about_section .detail-box .btn-box .btn-1 {
   display: inline-block;
   padding: 10px 0;
-  background-color: #ff4f5a;
+  background-color: #043927;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -499,8 +499,8 @@ body{
 
 .about_section .detail-box .btn-box .btn-1:hover {
   background-color: transparent;
-  border-color: #ff4f5a;
-  color: #ff4f5a;
+  border-color: #043927;
+  color: #043927;
 }
 
 .about_section .detail-box .btn-box .btn-2 {
