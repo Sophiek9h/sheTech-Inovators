@@ -650,3 +650,10 @@ li{
   padding: 20px 0;
   text-align: center;
 }
+
+footer{
+    background-color: #597C2B;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
