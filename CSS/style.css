@@ -45,3 +45,10 @@ li{
     margin-top: 3em;
     
 }
+
+footer{
+    background-color: #597C2B;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
