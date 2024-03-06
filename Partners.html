@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Partners</title>
+
+    <style>
+        body {
+            background-color: #FFF0F0;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: green;
+        }
+
+        .partnership-container-all {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .organisation-container {
+            height: 200px;
+            width: 600px;
+            border-left: 1px solid green;
+            border-bottom: 1px solid green;
+            margin-bottom: 50px;
+            border-radius: 10px;
+        }
+
+        .organisation-container:hover {
+            border-left: 2px solid green;
+            border-bottom: 3px solid green;
+        }
+
+        .partner-heading {
+            text-align: center;
+            font-size: 30px;
+            color: green;
+        }
+
+        .partner-description {
+            text-align: center;
+            font-size: 20px;
+
+        }
+
+        /* footer style */
+        footer {
+            background-color: #597C2B;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <!-- <p>-----------------To be styled----------</p> -->
+    <h1>Strategic Partners and Donors </h1>
+    <div class="partnership-container">
+        <div class="organisation-container">
+            <h3>United Nation</h3>
+            <p>UNEP champions for reducing our reliance on fossil fuels to source our electricity, supply our heating
+                and cooling needs, and power our industry and transportation, by accelerating the transition to
+                sustainable and affordable energy for all. </p>
+        </div>
+        <div class="organisation-container">
+            <h3>SELCO Foundation</h3>
+            <p>The roots of SELCO and it’s approach lie in designing and implementing customized context-based
+                sustainable energy access solutions and developing the ecosystem to scale such solutions</p>
+        </div>
+        <div class="organisation-container">
+            <h3>Carbon Trust</h3>
+            <p>Carbon Trust is driven by our mission to accelerate the move to a decarbonised future. We focus on impact
+                by helping our clients and partners across diverse sectors and industries achieve their climate
+                ambitions.</p>
+        </div>
+        <div class="organisation-container">
+            <h3>The Energy Nexus Network</h3>
+            <p>Informs decision-making and resilience to nexus shocks: Exploring the findings from the Nexus Shocks
+                Fellowship Dr Candice Howarth Background to the project The Nexus Shocks project explored how to improve
+                decision-making and resilience related to nexus shocks.</p>
+        </div>
+        <div class="organisation-container">
+            <h3>International Renewable Energy Agency</h3>
+            <p>The International Renewable Energy Agency is an intergovernmental organization mandated to facilitate
+                cooperation, advance knowledge, and promote the adoption and sustainable use of renewable energy.</p>
+        </div>
+        <div class="organisation-container">
+            <h3>Energy-Quest</h3>
+            <p>EnergyQuest is an Australian-based energy advisory firm, which specialises in independent energy market
+                analysis and strategy for energy companies, energy buyers, investors and governments.</p>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer class="footer jumbotron" id="Contact">
+        <div class="container">
+            <p>&copy; 2024 EverGreen. All rights reserved.</p>
+            <p>Contact Us: info@evergreen.com</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
