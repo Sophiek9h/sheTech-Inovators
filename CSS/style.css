@@ -133,8 +133,8 @@ body{
   }
   .hero_area {
     height: calc(100vh - 30px);
-    background: -webkit-gradient(linear, left top, right top, color-stop(55%, #043927), color-stop(55%, #668D2E));
-    background: linear-gradient(to right, #043927 55%, lightgreen 55%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(55%, #043927), color-stop(55%, lightgreen));
+    background: linear-gradient(to right, #043927 65%, lightgreen 55%);
    
     display: -webkit-box;
     display: -ms-flexbox;
@@ -644,16 +644,39 @@ li{
   padding: 1em 2em;
   text-align: center;
 } */
-.footer {
+/* footer > .footer {
   background-color: green;
   color: #D0E3FF;
   padding: 20px 0;
   text-align: center;
+} */
+
+/* footer section*/
+.footer_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #4c862D;
+  padding: 50px 0;
 }
 
-footer{
-    background-color: #597C2B;
-    padding: 20px;
-    text-align: center;
-    color: #ffffff;
+.footer_section p {
+  color: #fff;
+  margin: 0;
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
 }
+
+.footer_section a {
+  color: #fff;
+}
+
+/* end footer section*/
