@@ -9,7 +9,7 @@
     --color1: #597c2b;
     --color2: #3dd591;
     --color3: #80a142;
-    --color4: #b63d18;
+    --color4: #84ad71;
   }
 
   body {
@@ -535,14 +535,14 @@
 
   .about_section .detail-box .btn-box .btn-1:hover {
     background-color: transparent;
-    border-color: #ff4f5a;
+    border-color: #463839;
     color: #ff4f5a;
   }
 
   .about_section .detail-box .btn-box .btn-2 {
     display: inline-block;
     padding: 10px 0;
-    background-color: #c7560c;
+    background-color: #e25a30;
     color: #ffffff;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -552,8 +552,8 @@
 
   .about_section .detail-box .btn-box .btn-2:hover {
     background-color: transparent;
-    border-color: #c7560c;
-    color: #c7560c;
+    border-color: #84ad71;
+    color: #84ad71;
   }
 
   .about_section .img-box img {
@@ -620,6 +620,11 @@
   .menu_btn-style button .s-3 {
     -webkit-transform: rotate(-45deg) translate(8px, -8px);
     transform: rotate(-45deg) translate(8px, -8px);
+  }
+  .img-turbines {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
   }
 
   /* footer section*/
