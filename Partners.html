@@ -37,14 +37,19 @@
       width: 100%;
     }
 
-    .back-home-button {
-      background-color: #8B4513;
-      color: #ffffff;
+
+    .back-home-button,
+    .become-partner-button {
       border: none;
-      padding: 10px 25px;
       border-radius: 5px;
       transition: all 200ms ease-in-out;
       cursor: pointer;
+    }
+
+    .back-home-button {
+      background-color: #8B4513;
+      color: #ffffff;
+      padding: 10px 25px;
     }
 
     .back-home-button:hover {
@@ -52,9 +57,27 @@
       color: #ffffff;
     }
 
+    .become-partner-button {
+      background-color: #597C2B;
+      color: #ffffff;
+      display: block;
+      max-width: 30%;
+    }
+
     .button-container {
       margin-bottom: 0;
     }
+
+
+    .become-partner-button:hover {
+      background-color: #80a142;
+      color: #ffffff;
+    }
+
+    .button-container {
+      margin-bottom: 0;
+    }
+
 
     /* footer style */
     footer {
@@ -185,10 +208,17 @@
       <div class="col-auto">
         <a href="/" class="btn back-home-button">Back Home</a>
       </div>
+
+      <!-- Become a partner button -->
+      <div class="become-partner-button">
+        <div class="col-auto">
+          <button class="btn" onclick="toggleForm()">
+            Become a Partner
+          </button>
+        </div>
+      </div>
     </div>
   </div>
-
-
 
 
 
