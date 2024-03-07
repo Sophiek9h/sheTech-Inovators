@@ -3,31 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog</title>
-    
-    <h1> Welcome to the Blog!! </h1>
-    <p>The blog is a welcoming place for old and new comers into green energy world and green technologies. This is a simple platfiorm that will give you access to a community that will help you where needed, access unlimited knowledge about solar panel installation and maintence and recommend solutions to your problems.
-    </p>
-
-
-      <!-- Footer -->
-    <link rel="stylesheet" href="./CSS/style.css">
     <title>Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            background-image: url('images/plant.jpg');
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: auto;
+            height: auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 30%; /* Adjust as needed */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px; /* Round the corners of the video wrapper */
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%; 
+            height: 70%; 
+            border-radius: 10px; 
+            border: none; 
+        }
+
+        .video-wrapper video::-webkit-media-controls {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-enclosure {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-panel {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-play-button {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-timeline {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-current-time-display {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-time-remaining-display {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-mute-button {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-volume-slider {
+            display: none !important;
+        }
+
+        .video-wrapper video::-webkit-media-controls-fullscreen-button {
+            display: none !important;
+        }
+
+        p {
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        main {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #4c862d;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        ul {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+    </style>
 </head>
 <body>
-
-        <!-- Footer -->
-<footer class="footer jumbotron" id="Contact">
     <div class="container">
-        <p>&copy; 2024 EverGreen. All rights reserved.</p>
-        <p>Contact Us: info@evergreen.com</p>
+        <h1>Welcome to the Blog!!</h1>
+        <p>The blog is a welcoming place for old and new comers into green energy world and green technologies. 
+            This is a simple platform that will give you access to a community that will help you where needed, 
+            access unlimited knowledge about solar panel installation and maintenance, and recommend solutions to your problems.</p>
+
+        <!-- Video Section -->
+        <div class="video-wrapper">
+            <!-- Embedded video from the "images" folder -->
+            <video controls autoplay muted>
+                <source src="images/evergreen.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <!-- Articles Section -->
+        <h2>Stay Informed on Sustainable Energy: Latest Energy News In Africa!</h2>
+        <!-- Add your articles here -->
+        <ul>
+            <li><a href="https://www.energyconnects.com/opinion/thought-leadership/2024/march/women-in-energy-busting-some-myths-on-what-gets-them-in-and-moves-them-up/">Women in Energy: Busting Some Myths on What Gets Them In and Moves Them Up</a></li>
+            <li><a href="https://www.energyconnects.com/news/oil/2024/march/totalenergies-expands-presence-in-south-africa-s-orange-basin-with-new-offshore-exploration-license/">TotalEnergies Expands Presence in South Africa's Orange Basin with New Offshore Exploration License</a></li>
+            <li><a href="https://www.energyconnects.com/opinion/thought-leadership/2024/march/building-a-diversified-and-resilient-energy-mix-in-africa-lessons-from-egypes-2024/">Building a Diversified and Resilient Energy Mix in Africa: Lessons from Egypt's 2024</a></li>
+            <li><a href="https://www.energyconnects.com/opinion/features/2024/february/opec-and-africa-hold-dialogue-to-address-common-energy-challenges/">OPEC and Africa Hold Dialogue to Address Common Energy Challenges</a></li>
+        </ul>
+
+        <h2>Discover Sustainable Energy</h2>
+        <p>Click the link below to access the Reddit community!!!</p>
+        <ul>
+            <li><a href="//www.reddit.com/r/EverGreenAfrica/">Reddit</a></li>
+        </ul>
     </div>
-</footer>
 
-
-</head>
-<body>
-
-    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EverGreen Africa. All rights reserved. Contact Us: info@evergreen.com</p>
+    </footer>
 </body>
 </html>

@@ -93,6 +93,11 @@
 
   .header_section {
     overflow-x: hidden;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
   }
 
   .header_section .container-fluid {
@@ -154,6 +159,8 @@
     background-size: 30px;
     width: 32px;
     height: 32px;
+    position: absolute;
+    z-index: 1;
   }
   .hero_area {
     height: calc(100vh - 30px);
@@ -418,7 +425,10 @@
   }
 
   .slider_section .img-container .img-box img {
-    width: 100%;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    width: 35rem;
+    height: 42.1rem;
   }
 
   .slider_section #carouselExampleIndicators {
@@ -429,7 +439,7 @@
   .slider_section .carousel_btn-container {
     width: 120px;
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -473,7 +483,7 @@
   .slider_section ol.carousel-indicators {
     margin: 0;
     width: 75px;
-    bottom: 45px;
+    bottom: 55px;
     left: initial;
     right: 25px;
   }
@@ -500,10 +510,17 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  
+  }
+
+  .about_section .detail-box{
+    margin-left: 5rem;
   }
 
   .about_section .detail-box p {
     margin-top: 20px;
+    width: 30rem;
+    text-align: justify;
   }
 
   .about_section .detail-box .btn-box {
