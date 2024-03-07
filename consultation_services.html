@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation Services - EverGreen Africa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+header h1 {
+  font-size: 42px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(33.33% - 40px);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.service-info h2 {
+  color: #4caf50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-info p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #388e3c;
+}
+
+/* footer style */
+footer {
+        background-color: #597c2b;
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        text-align: center;
+        color: #ffffff;
+      }
+
+  </style>
+  <body>
+    <header>
+      <h1>Consultation Services</h1>
+    </header>
+    <div class="container">
+      <section class="service">
+        <img src="consultation.jpg" alt="Consultation Service Image" />
+        <div class="service-info">
+          <h2>Personalized Energy Solutions</h2>
+          <p>
+            Our experts will assess your energy needs and provide customized
+            recommendations to help you save money and reduce your environmental
+            footprint.
+          </p>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <button type="submit" class="btn">Get Started</button>
+          </form>
+        </div>
+      </section>
+      <section class="service">
+        <img src="implementation.jpg" alt="Implementation Service Image" />
+        <div class="service-info">
+          <h2>Expert Implementation Support</h2>
+          <p>
+            We'll guide you through the process of implementing renewable energy
+            solutions, from procurement to installation, ensuring a smooth
+            transition to sustainable practices.
+          </p>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <button type="submit" class="btn">Learn More</button>
+          </form>
+        </div>
+      </section>
+      <section class="service">
+        <img src="monitoring.jpg" alt="Monitoring Service Image" />
+        <div class="service-info">
+          <h2>Ongoing Monitoring and Optimization</h2>
+          <p>
+            Our team will continuously monitor your energy systems and provide
+            proactive support to optimize performance and maximize savings over
+            time.
+          </p>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <button type="submit" class="btn">Contact Us</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 EverGreen Africa. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
