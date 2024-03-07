@@ -31,10 +31,16 @@ img {
 }
 
 h1 {
-  color: rgb(7, 66, 3);
-  text-align: center;
+  margin-top: 30px !important;
+  color: #2595c7;
+  text-align: center !important;
   font-size: 35px;
   margin-bottom: 40px !important;
+  background-color: #f2fbfb;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 20px 20px 20px 20px;
+  margin: 0 auto;
 }
 
 .well {
