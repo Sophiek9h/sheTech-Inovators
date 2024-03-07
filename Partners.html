@@ -18,23 +18,33 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <title>Partners</title>
 
     <style>
       body {
-        background-color: #fff0f0;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url("https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg");
+
         font-family: sans-serif;
       }
 
       h1 {
         text-align: center;
-        color: black;
+        color: rgb(255, 255, 255);
         font-weight: bolder;
         text-transform: uppercase;
       }
 
-      #partnerBox {
+      /*#partnerBox {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto auto auto;
@@ -45,7 +55,7 @@
           ),
           url("https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg");
         background-size: cover;
-      }
+      } */
 
       .partner {
         background-color: white;
@@ -100,6 +110,64 @@
         margin-bottom: 0;
       }
 
+      /* Card style */
+      .card {
+        height: 400px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        gap: 5;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: #597c2b;
+      }
+
+      .card-img-top {
+        max-height: 100px; /* Adjust the size as needed */
+        width: fit-content;
+        object-fit: 50px;
+        position: absolute;
+        top: 0;
+        right: 60px; /* Adjust the positioning as needed */
+      }
+      .card-body {
+        margin-left: 70px; /* Adjust margin to accommodate the image width */
+        height: 100%;
+      }
+
+      #cardhead {
+        align-items: center;
+        position: absolute;
+        left: 150px;
+      }
+
+      #cardhead2 {
+        align-items: center;
+        position: absolute;
+        left: 130px;
+      }
+
+      .cardhead3 {
+        align-items: center;
+        position: absolute;
+        left: 200px;
+      }
+
+      #cardhead4 {
+        align-items: center;
+        position: absolute;
+        left: 135px;
+      }
+      .cardtitle {
+        display: flex;
+        align-items: center;
+        gap: 5;
+      }
+
       /* footer style */
       footer {
         background-color: #597c2b;
@@ -115,7 +183,155 @@
   <body>
     <h1>Strategic Donors and Partners</h1>
 
-    <div id="partnerBox">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="row" id="cardhead">
+              <div class="col">
+                <img
+                  src="images/united-nations-logo.png"
+                  class="card-img-top"
+                  alt="Placeholder Image"
+                />
+              </div>
+              <div class="col" id="title 1"></div>
+            </div>
+            <div class="card-body text-bg-success">
+              <h5 class="card-title">United Nation</h5>
+              <p class="card-text">
+                UNEP champions for reducing our reliance on fossil fuels to
+                source our electricity, supply our heating and cooling needs,
+                and power our industry and transportation, by accelerating the
+                transition to sustainable and affordable energy for all..
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="row" id="cardhead2">
+              <div class="col">
+                <img
+                  src="images/Selco foundation.png"
+                  class="card-img-top"
+                  alt="Placeholder Image"
+                />
+              </div>
+              <div class="col" id="title 1"></div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">SELCO Foundation</h5>
+              <p class="card-text">
+                The roots of SELCO and it’s approach lie in designing and
+                implementing customized context-based sustainable energy access
+                solutions and developing the ecosystem to scale such solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="row" id="cardhead4">
+              <div class="col">
+                <img
+                  src="images/carbon trust.jpg"
+                  class="card-img-top"
+                  alt="Placeholder Image"
+                />
+              </div>
+            </div>
+            <div class="col"></div>
+            <div class="card-body">
+              <h5 class="card-title">Carbon Trust</h5>
+              <p class="card-text">
+                Carbon Trust is driven by our mission to accelerate the move to
+                a decarbonised future. We focus on impact by helping our clients
+                and partners across diverse sectors and industries achieve their
+                climate ambitions..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="second">
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="row" id="cardhead2">
+              <div class="col">
+                <img
+                  src="images/Nexuslogo.png"
+                  class="card-img-top"
+                  alt="Placeholder Image"
+                />
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">The Energy Nexus Network</h5>
+              <p class="card-text">
+                Informs decision-making and resilience to nexus shocks:
+                Exploring the findings from the Nexus Shocks Fellowship Dr
+                Candice Howarth Background to the project The Nexus Shocks
+                project explored how to improve decision-making and resilience
+                related to nexus shocks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="row" id="cardhead4">
+              <div class="col">
+                <img
+                  src="images/international-renewable-energy.jpg"
+                  class="card-img-top"
+                  alt="Placeholder Image"
+                />
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">International Renewable Energy Agency</h5>
+
+              <p class="card-text">
+                The International Renewable Energy Agency is an
+                intergovernmental organization mandated to facilitate
+                cooperation, advance knowledge, and promote the adoption and
+                sustainable use of renewable energy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-3">
+            <div class="row" id="cardhead2">
+              <div class="col">
+                <img
+                  src="images/Quest Energy.jpg"
+                  class="card-img-top"
+                  alt="Placeholder Image"
+                />
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Energy-Quest</h5>
+              <p class="card-text">
+                EnergyQuest is an Australian-based energy advisory firm, which
+                specialises in independent energy market analysis and strategy
+                for energy companies, energy buyers, investors and governments.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="partnerBox">
       <div class="partner">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/1200px-Flag_of_the_United_Nations.svg.png"
@@ -191,7 +407,7 @@
           energy companies, energy buyers, investors and governments.
         </p>
       </div>
-    </div>
+    </div>-->
 
     <!-- button linking to homepage -->
     <div class="button-container">
@@ -218,4 +434,3 @@
     </footer>
   </body>
 </html>
-
