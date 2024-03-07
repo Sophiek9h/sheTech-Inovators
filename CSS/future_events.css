@@ -27,7 +27,8 @@ small {
 }
 p,
 img {
-  width: 100%;
+  width: 600px;
+  height: max-content;
 }
 
 h1 {
