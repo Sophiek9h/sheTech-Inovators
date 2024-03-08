@@ -3,169 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
+    <link rel="stylesheet" href="./CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
-    /> -->
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
     <title>Partners</title>
 
     <style>
       body {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0.75)
-          ),
-          url("https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg");
-
+        background-color: #fff0f0;
         font-family: sans-serif;
       }
 
-      h1 {
-        text-align: center;
-        color: rgb(255, 255, 255);
-        font-weight: bolder;
-        text-transform: uppercase;
+      h1 {        text-align: center;
+        color: white;
       }
 
-      /*#partnerBox {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        gap: 10px;
+      .container {
+        margin: auto;
+
+        padding-bottom: 80px;
+      }
+
+      .cover {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
           ),
           url("https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg");
         background-size: cover;
-      } */
+        width: 100%;
+      }
 
-      .partner {
-        background-color: white;
-        border: 3px solid black;
-        padding: 5px;
-        text-align: center;
-      }
-      .partner img {
-        max-width: 30%;
-        height: auto;
-      }
-      p {
-        color: black;
-      }
-      .back-home-button,
-      .become-partner-button {
+      #partnerButton {
         border: none;
         border-radius: 5px;
         transition: all 200ms ease-in-out;
         cursor: pointer;
-      }
-
-      .back-home-button {
         background-color: #8b4513;
         color: #ffffff;
         padding: 10px 25px;
       }
 
-      .back-home-button:hover {
-        background-color: #a0522d;
+      #partnerButton:hover {
+        background-color: #ab7961;
         color: #ffffff;
       }
 
-      .become-partner-button {
+      /* .become-partner-button {
         background-color: #597c2b;
         color: #ffffff;
         display: block;
         max-width: 30%;
         text-align: center;
-      }
+      } */
 
-      .button-container {
+      /* .button-container {
         margin-bottom: 0;
-      }
+      } */
 
-      .become-partner-button:hover {
+      /* .become-partner-button:hover {
         background-color: #80a142;
         color: #ffffff;
-      }
+      } */
 
       .button-container {
         margin-bottom: 0;
       }
-
-      /* Card style */
-      .card {
-        height: 400px;
-        margin-bottom: 20px;
-        margin-top: 20px;
+      /* CSS for form below */
+      form {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: transparent;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-        gap: 5;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      label::after {
+        content: "*";
+        color: red;
       }
 
-      .card:hover {
-        transform: scale(1.05);
-        box-shadow: #597c2b;
+      input[type="text"],
+      input[type="email"],
+      input[type="date"] {
+        height: 30px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      #formSubmitBtn {
+        background-color: #8b4519;
+        color: black;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
       }
 
-      .card-img-top {
-        max-height: 100px; /* Adjust the size as needed */
-        width: fit-content;
-        object-fit: 50px;
-        position: absolute;
-        top: 0;
-        right: 60px; /* Adjust the positioning as needed */
+      #formSubmitBtn:hover {
+        background-color: #421f06;
+        cursor: pointer;
       }
-      .card-body {
-        margin-left: 70px; /* Adjust margin to accommodate the image width */
-        height: 100%;
-      }
-
-      #cardhead {
-        align-items: center;
-        position: absolute;
-        left: 150px;
-      }
-
-      #cardhead2 {
-        align-items: center;
-        position: absolute;
-        left: 130px;
-      }
-
-      .cardhead3 {
-        align-items: center;
-        position: absolute;
-        left: 200px;
-      }
-
-      #cardhead4 {
-        align-items: center;
-        position: absolute;
-        left: 135px;
-      }
-      .cardtitle {
-        display: flex;
-        align-items: center;
-        gap: 5;
+      #formHolder {
+        display: none;
       }
 
       /* footer style */
@@ -178,126 +131,119 @@
         color: #ffffff;
       }
     </style>
-  </head>
+      </head>
 
   <body>
-    <h1>Strategic Donors and Partners</h1>
+    <!-- <p>-----------------To be styled----------</p> -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <div class="row" id="cardhead">
-              <div class="col">
-                <img
-                  src="images/united-nations-logo.png"
-                  class="card-img-top"
-                  alt="Placeholder Image"
-                />
-              </div>
-              <div class="col" id="title 1"></div>
-            </div>
+    <div class="cover">
+      <h1>Strategic Partners and Donors</h1>
+
+      <!-- Example Code -->
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 container">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/1200px-Flag_of_the_United_Nations.svg.png"
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="140"
+            />
             <div class="card-body text-bg-success">
-              <h5 class="card-title">United Nation</h5>
+              <a href="https://www.un.org/en/"
+                ><h5 class="card-title">United Nations</h5></a
+              >
               <p class="card-text">
                 UNEP champions for reducing our reliance on fossil fuels to
                 source our electricity, supply our heating and cooling needs,
                 and power our industry and transportation, by accelerating the
-                transition to sustainable and affordable energy for all..
+                transition to sustainable and affordable energy for all.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <div class="row" id="cardhead2">
-              <div class="col">
-                <img
-                  src="images/Selco foundation.png"
-                  class="card-img-top"
-                  alt="Placeholder Image"
-                />
-              </div>
-              <div class="col" id="title 1"></div>
-            </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://selcofoundation.org/wp-content/themes/selco-foundation/images/selco%20foundation%20logo%20white%20text.png"
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="140"
+            />
+            <!-- <rect width="100%" height="100%" fill="#868e96"></rect> -->
             <div class="card-body">
-              <h5 class="card-title">SELCO Foundation</h5>
+              <a href="https://selcofoundation.org/"
+                ><h5 class="card-title">SELCO Foundation</h5></a
+              >
               <p class="card-text">
                 The roots of SELCO and it’s approach lie in designing and
                 implementing customized context-based sustainable energy access
                 solutions and developing the ecosystem to scale such solutions.
+                tkjEFbehygyzd,bjh,zvfjmzfhvzhgjmgzyuzgyfgyfzfhvgrvfvrz
+                <br>
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <div class="row" id="cardhead4">
-              <div class="col">
-                <img
-                  src="images/carbon trust.jpg"
-                  class="card-img-top"
-                  alt="Placeholder Image"
-                />
-              </div>
-            </div>
-            <div class="col"></div>
-            <div class="card-body">
-              <h5 class="card-title">Carbon Trust</h5>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_nuBxH5NrkPnNPkpwekBerpNvqohWigUdXft_wAenFg&s"
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="140"
+            />
+            <div class="card-body text-bg-success">
+              <a href="https://www.carbontrust.com/en-af"
+                ><h5 class="card-title">Carbon Trust</h5></a
+              >
+
               <p class="card-text">
-                Carbon Trust is driven by our mission to accelerate the move to
+                Carbon Trust is driven by the mission to accelerate the move to
                 a decarbonised future. We focus on impact by helping our clients
                 and partners across diverse sectors and industries achieve their
-                climate ambitions..
+                climate ambitions.
               </p>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row" id="second">
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <div class="row" id="cardhead2">
-              <div class="col">
-                <img
-                  src="images/Nexuslogo.png"
-                  class="card-img-top"
-                  alt="Placeholder Image"
-                />
-              </div>
-            </div>
-
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://icdimpact.org/wp-content/uploads/TENN-logo_new.jpg"
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="140"
+            />
             <div class="card-body">
-              <h5 class="card-title">The Energy Nexus Network</h5>
+              <a href="https://tenninnovation.org/"
+                ><h5 class="card-title">The Energy Nexus Network</h5></a
+              >
+
               <p class="card-text">
-                Informs decision-making and resilience to nexus shocks:
-                Exploring the findings from the Nexus Shocks Fellowship Dr
-                Candice Howarth Background to the project The Nexus Shocks
-                project explored how to improve decision-making and resilience
-                related to nexus shocks.
+                A regional knowledge and facilitation hub for scaling
+                decentralized renewable energy solutions using sustainable
+                energy (SDG7) as a critical catalyst/entry point to improve
+                development outcomes.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <div class="row" id="cardhead4">
-              <div class="col">
-                <img
-                  src="images/international-renewable-energy.jpg"
-                  class="card-img-top"
-                  alt="Placeholder Image"
-                />
-              </div>
-            </div>
-
-            <div class="card-body">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckGmM8QCjqL6Z1XlLIfIPLIIyFdf4gVEU2bOg6JAREA&s"
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="140"
+            />
+            <div class="card-body text-bg-success">
               <h5 class="card-title">International Renewable Energy Agency</h5>
-
               <p class="card-text">
                 The International Renewable Energy Agency is an
                 intergovernmental organization mandated to facilitate
@@ -308,121 +254,89 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-3">
-            <div class="row" id="cardhead2">
-              <div class="col">
-                <img
-                  src="images/Quest Energy.jpg"
-                  class="card-img-top"
-                  alt="Placeholder Image"
-                />
-              </div>
-            </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://energyquesttech.com/wp-content/uploads/2020/03/EnergyQuest_logo-scaled.jpg"
+              class="bd-placeholder-img card-img-top"
+              width="100%"
+              height="140"
+            />
+
             <div class="card-body">
-              <h5 class="card-title">Energy-Quest</h5>
+              <h5 class="card-title">Energy Quest</h5>
               <p class="card-text">
                 EnergyQuest is an Australian-based energy advisory firm, which
                 specialises in independent energy market analysis and strategy
                 for energy companies, energy buyers, investors and governments.
+                thghdghsgduzehfgyhzrdbfhdbrz,hvzbdjfbhdrzvfjdmfhvdhvbhdf
+                <br>
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div id="partnerBox">
-      <div class="partner">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/1200px-Flag_of_the_United_Nations.svg.png"
-          alt="UN Logo"
-        /><br />
-        <a href="">United Nations</a>
-        <p>
-          UNEP champions for reducing our reliance on fossil fuels to source our
-          electricity, supply our heating and cooling needs, and power our
-          industry and transportation, by accelerating the transition to
-          sustainable and affordable energy for all.
-        </p>
-      </div>
-
-      <div class="partner">
-        <img
-          src="https://selcofoundation.org/wp-content/themes/selco-foundation/images/selco%20foundation%20logo%20white%20text.png"
-          alt="SELCO Logo"
-        /><br />
-        <a href="">SELCO Foundation</a>
-        <p>
-          The roots of SELCO and it’s approach lie in designing and implementing
-          customized context-based sustainable energy access solutions and
-          developing the ecosystem to scale such solutions.
-        </p>
-      </div>
-      <div class="partner">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_nuBxH5NrkPnNPkpwekBerpNvqohWigUdXft_wAenFg&s"
-          alt="carbontrust Logo"
-        /><br />
-        <a href="">Carbon Trust</a>
-        <p>
-          Carbon Trust is driven by our mission to accelerate the move to a
-          decarbonised future. We focus on impact by helping our clients and
-          partners across diverse sectors and industries achieve their climate
-          ambitions.
-        </p>
-      </div>
-      <div class="partner">
-        <img
-          src="https://icdimpact.org/wp-content/uploads/TENN-logo_new.jpg"
-          alt="TENN Logo"
-        /><br />
-        <a href="">The Energy Nexus Network</a>
-        <p>
-          A regional knowledge and facilitation hub for scaling decentralized
-          renewable energy solutions using sustainable energy (SDG7) as a
-          critical catalyst/entry point to improve development outcomes.
-        </p>
-      </div>
-      <div class="partner">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckGmM8QCjqL6Z1XlLIfIPLIIyFdf4gVEU2bOg6JAREA&s"
-          alt="IRENA Logo"
-        /><br />
-        <a href="">International Renewable Energy Agency</a>
-        <p>
-          The International Renewable Energy Agency is an intergovernmental
-          organization mandated to facilitate cooperation, advance knowledge,
-          and promote the adoption and sustainable use of renewable energy.
-        </p>
-      </div>
-      <div class="partner">
-        <img
-          src="https://energyquesttech.com/wp-content/uploads/2020/03/EnergyQuest_logo-scaled.jpg"
-          alt="EnergyQuest Logo"
-        /><br />
-        <a href="">Energy Quest</a>
-        <p>
-          EnergyQuest is an Australian-based energy advisory firm, which
-          specialises in independent energy market analysis and strategy for
-          energy companies, energy buyers, investors and governments.
-        </p>
-      </div>
-    </div>-->
 
     <!-- button linking to homepage -->
     <div class="button-container">
       <div class="row justify-content-center mt-4">
         <div class="col-auto">
-          <a href="/" class="btn back-home-button">Back Home</a>
-        </div>
-
-        <!-- Become a partner button -->
-        <div class="become-partner-button">
-          <div class="col-auto">
-            <button class="btn" onclick="toggleForm()">Partner with us</button>
-          </div>
+          <button id="partnerButton">Partner with us</button>
         </div>
       </div>
+    </div>
+    <!-- Below is the Partner with us button and when you click on it,
+          it opens a form for you to fill inorder to parner with us -->
+    <div id="formHolder">
+      <form name="myForm">
+        <p>
+          <em> Join us as we to improve sustainable lives.</em>
+        </p>
+        <hr />
+        <div>
+          <label for="name">Name</label><br /><input
+            id="name"
+            type="text"
+            name="name"
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="telephone">Telephone</label><br /><input
+            id="telephone"
+            type="text"
+            name="telephone"
+            required
+          />
+        </div>
+        <br />
+
+        <div>
+          <label for="email">Email</label><br /><input
+            id="email"
+            type="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <br />
+
+
+        <div>
+          <input id="consent" type="checkbox" name="consent" />
+          <label for="consent"
+            >I allow the information provided to be used to contact me for
+            partnership requirements.</label
+          >
+        </div>
+        <br />
+        <button id="formSubmitBtn" type="submit" value="submit">Submit</button>
+        <div id="response" style="color: #ca7e49"></div>
+      </form>
     </div>
 
     <!-- Footer -->
@@ -432,5 +346,72 @@
         <p>Contact Us: info@evergreen.com</p>
       </div>
     </footer>
+    <script>
+        console.clear();
+        const form = document.querySelector("form");
+        // Testing logic for displaying form between line 293 and 304
+
+        let partnerButton = document.querySelector("#partnerButton");
+        let formHolder = document.querySelector("#formHolder");
+        state = 0;
+        let style = ["none", "block"];
+        let texts = ["Partner with us", "Minimize Form"];
+        partnerButton.addEventListener("click", function () {
+          state = 1 - state;
+          formHolder.style.display = style[state];
+          partnerButton.innerText = texts[state];
+        });
+
+        // Testing logic for displaying form between line 293 and 304
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          let name = document.forms["myForm"]["name"].value;
+          let email = document.forms["myForm"]["email"].value;
+          let telephone = document.forms["myForm"]["telephone"].value;
+          let consent = document.forms["myForm"]["consent"].checked;
+
+          const userData = {
+            name: name,
+            email: email,
+            telephone: telephone,
+            consent: consent,
+          };
+          console.log(userData);
+
+          const jsonData = JSON.stringify(userData);
+
+          async function postData() {
+            let myPromise = new Promise(async function (resolve) {
+              try {
+                const response = await fetch(
+                  "https://jsonplaceholder.typicode.com/posts/",
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: jsonData,
+                  }
+                );
+
+                const jsonResponse = await response.json();
+                console.log(jsonResponse);
+                resolve(JSON.stringify(jsonResponse, null, 2));
+              } catch (error) {
+                resolve("An error occurred. Please try again.");
+              }
+            });
+
+            document.getElementById("response").innerText = await myPromise;
+          }
+
+          postData();
+          {
+            document.getElementById("response").innerHTML =
+              "Form Succesfully submitted";
+          }
+        });
+      </script>
+    </body>
   </body>
 </html>
