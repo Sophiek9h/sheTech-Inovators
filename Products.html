@@ -1,16 +1,14 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Products</title>
+    <title>HTML + CSS</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <style>
     .container {
-  background-color: green;
   background-image: url(solar-and-wind-with-urban-background.jpg);
   background-size: cover;
   background-position: center;
@@ -27,19 +25,28 @@
   margin-bottom: 10px;
   font: bold;
   margin-left: 10px;
+  color: green;
+  font-weight: bold;
 }
+
 #smallFont {
   font-size: 20px;
   font-style: normal;
   margin-left: 10px;
+  color: green;
+  font-weight: bold;
 }
 
-#smallerFont {
+p {
   font-size: 15px;
   font-style: normal;
   margin-left: 10px;
   margin-top: 20px;
   padding-inline: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-weight: bold;
 }
 
 h4 {
@@ -54,28 +61,58 @@ h4 {
 }
 
 .image-container {
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-frame {
+  border: 5px solid green;
   padding: 10px;
-  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  color: black;
+}
+
+.description {
+  font-style: bold;
+  color: black;
+}
+
+footer {
+  background-color: green;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
 
   </style>
   <body>
     <div class="container">
       <div>
-        <head>
-          <h1>
-            <span id="bigFont">Evergreen Africa Marketplace</span> <br />
-            <span id="smallFont">Your Sustainable Energy Solutions Await</span
-            ><br />
-            <span id="smallerFont"
-              >Explore seemless access to our affordable solar panels,
-              energy-efficient appliances, and other eco-friendly technologies.
-              Our goal is to reduce gas emissions, embrace green energy in
-              promoting sustainability and build a resilient future.</span
-            >
-          </h1>
-        </head>
+        <header>
+          <span id="bigFont">Evergreen Africa Marketplace</span> <br />
+          <span id="smallFont">Your Sustainable Energy Solutions Await.</span>
+        </header>
+        <p>
+          Explore seemless access to our affordable solar panels,
+          energy-efficient appliances, and other eco-friendly technologies. Our
+          goal is to reduce gas emissions, embrace green energy in promoting
+          sustainability and build a resilient future.
+        </p>
       </div>
     </div>
     <h4>
@@ -85,42 +122,29 @@ h4 {
 
     <main>
       <div class="image-container">
-        <img src="20wp-solar-panel.webp" alt="20wp solar panel" />
-        <h3>20wp Solar Panel</h3>
-        <p>Price: #120,000</p>
+        <div class="image-frame">
+          <img src="20wp-solar-panel.webp" alt="20wp solar panel" />
+            <p class="price">N150,000</p>
+            <p class="description">20WP Solar Panel</p>
+        </div>
 
-        <img src="solar camera.png" alt="solar camera" />
-        <h3>20wp Solar Panel</h3>
-        <p>Price: #120,000</p>
-
-        <img src="" alt="" />
+       <div class="image-container">
+        <div class="image-frame"> <img src="solar camera.jpeg" alt="solar camera" />
+            <p class="price">N250,000</p>
+            <p class="description">Solar Power 4G PTZ Camera</p>
+        </div>
       </div>
     </main>
 
     <!-- footer -->
-    <footer class="footer jumbotron" id="Contact">
-      <div id="container">
-        <p>copy; 2024 EverGreen. All rights reserved.</p>
-        <p>Contact Us: info@evergreen.com</p>
-      </div>
+    <footer>
+      <div class="left">Contact Us: info@evergreen.com</div>
+      <div class="right">Copy; 2024 EverGreen. All rights reserved.</div>
     </footer>
   </body>
 </html>
 
-<!-- <div class="product 1">
-  <img src="20wp-solar-panel.webp" alt=" 20wp solar panel" />
-  <h3>20wp Solar Panel</h3>
-  <p>Price: #120,000</p>
-</div>
 
-<div class="product 2">
-  <img src="solar camera.png" alt=" solar camera" />
-  <h3>Night Vision Solar Security Camera</h3>
-  <p>Price: #150,000</p>
-</div>
 
-<div class="product 3">
-  <img src="wind turbine.jpg" alt="wind turbine" />
-  <h3>Horizontal turbine wind generator 12/24V</h3>
-  <p>Price: #130,000</p>
-</div>
+
+
