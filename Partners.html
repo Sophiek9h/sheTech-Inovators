@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css">
+
     <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -123,14 +125,196 @@
       }
 
       /* footer style */
-      footer {
+      /* footer {
         background-color: #597c2b;
         padding: 20px;
         margin-top: 10px;
         margin-bottom: 0px;
         text-align: center;
         color: #ffffff;
-      }
+      } */
+
+      /* info section */
+.info_section {
+  position: relative;
+  /* background-color: #043927; */
+  background-color: #4c862d;
+  color: #ffffff;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.info_section .heading_container {
+  margin-bottom: 45px;
+}
+
+.info_section h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info_section .info_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.info_section .info_top .info_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info_section .info_top .info_logo img {
+  width: 65px;
+}
+
+.info_section .info_top .info_logo span {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.info_section .info_top .social_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info_section .info_top .social_box a {
+  margin: 0 10px;
+}
+
+.info_section .info_top .social_box a img {
+  width: auto;
+  height: auto;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.info_section a {
+  text-transform: none;
+}
+
+.info_section ul {
+  padding: 0;
+}
+
+.info_section ul li {
+  list-style-type: none;
+  margin: 3px 0;
+}
+
+.info_section ul li a {
+  color: #ffffff;
+}
+
+.info_section .info_link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info_section .info_form form input {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+}
+
+.info_section .info_form form button {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: #043927;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border: 1.5px solid #ffffff;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.info_section .info_form form button:hover {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.info_section .info_contact .link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+ 
+  color: #ffffff;
+}
+
+.info_section .info_contact .link-box .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 15px;
+  min-height: 15px;
+  margin-right: 20px;
+}
+
+.info_section .info_contact .link-box .img-box img {
+  width: auto;
+  height: auto;
+  max-width: 30px;
+  max-height: 30px;
+}
+.info_section p{
+  text-align: left;
+  width: 100%;
+}
+
+/* end info section */
+.footer{
+  color: #ffffff;
+  text-align: center;
+  width: 100%;
+}
+.footer_end{
+  background-color: #043927;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 10px;
+}
     </style>
   </head>
 
@@ -326,14 +510,171 @@
         <div id="response" style="color: #ca7e49"></div>
       </form>
     </div>
+<br><br>
+ <!-- info section -->
+
+ <section class="info_section">
+  <div class="info_container ">
+    <div class="container">
+      <div class="info_top">
+        <!-- <div class="info_logo">
+          <img src="images/logo-1.png" alt="" />
+          <span>
+            Evergreen
+          </span>
+        </div> -->
+        <div class="social_box">
+          <a href="#">
+            <img src="images/fb.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/twitter.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/linkedin.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/instagram.png" alt="">
+          </a>
+          <a href="#">
+            <img src="images/youtube.png" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div class="info_main">
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <div class="info_link-box">
+              <h5 class="heading1">
+                Useful Link
+              </h5>
+              <ul>
+                <li class=" active">
+                  <a class="" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="">
+                  <a class="" href="About_us.html">About </a>
+                </li>
+                <li class="">
+                  <a class="" href="Blog.html">Blog </a>
+                </li>
+                <li class="">
+                  <a class="" href="consultation_services.html">Services </a>
+                </li>
+                <li class="">
+                  <a class="" href="Partners.html">Partnerships</a>
+                </li>
+                <li class="">
+                  <a class="" href="Products.html">Products </a>
+                </li>
+                <li class="">
+                  <a class="" href="Future_Events.html">Events </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 ">
+            <h5>
+              Offices
+            </h5>
+            <p>
+              We are located in Nigera, South Africa, Zimbabwe, Sierra Leone, Kenya, Malawi and Cameroon
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 offset-lg-1">
+            <h5>
+              Information
+            </h5>
+            <p>
+              Evergreen Africa is here for you!
+            </p>
+          </div>
+
+          <div class="col-md-3  offset-lg-1">
+            <div class="info_form ">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="">
+                <input type="email" placeholder="Email">
+                <button>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-9 col-md-10 mx-auto">
+          <div class="info_contact layout_padding2">
+            <div class="row">
+              <div class="col-md-3">
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="images/location.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Location
+                    </h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="images/mail.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      info@EvergreenAfrica.com
+                    </h6>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-5">
+                <a href="#" class="link-box">
+                  <div class="img-box">
+                    <img src="images/call.png" alt="">
+                  </div>
+                  <div class="detail-box">
+                    <h6>
+                      Call +01 1234567890
+                    </h6>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   
+    
+  </div>
+</section>
+
+<!-- end info section -->
+
+
+<footer class="footer_end">
+  <p class="footer"> &copy; <span id="displayDate"></span> All Rights Reserved By sheTech Innovators</p>
+    <p  class="footer">Contact Us: info@EvergreenAfrica.com</p>
+</footer>
+
 
     <!-- Footer -->
-    <footer class="footer jumbotron" id="Contact">
+    <!-- <footer class="footer jumbotron" id="Contact">
       <div class="container">
         <p>&copy; 2024 EverGreen. All rights reserved.</p>
         <p>Contact Us: info@evergreen.com</p>
       </div>
-    </footer>
+    </footer> -->
     <script>
         console.clear();
         const form = document.querySelector("form");

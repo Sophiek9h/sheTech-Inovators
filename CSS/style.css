@@ -186,7 +186,8 @@
   .sub_page .hero_area {
     height: auto;
     background: none;
-    /* background-color: #1a2e35; */
+    /* color: #043927;
+    background-color: #1a2e35; */
   }
 
   .hero_area.sub_pages {
@@ -645,34 +646,6 @@
   }
 
   /* footer section*/
-  .footer_section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: #4c862d;
-    padding: 50px 0;
-  }
-
-  .footer_section p {
-    color: #fff;
-    margin: 0;
-    padding: 1rem;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .footer_section a {
-    color: #fff;
-  }
-
-  /* end footer section*/
 }
 
 /* slider section */
