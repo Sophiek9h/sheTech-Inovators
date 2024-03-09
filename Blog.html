@@ -1,129 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/responsive.css">
-    <link rel="icon" href="images/logo-1.png" type="image/png">
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
+  <link rel="icon" href="images/logo-1.png" type="image/png">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.css" />
+
+  <!-- bootstrap link sophia added -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Blog</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgba(43, 122, 43, 0.151);
+      overflow-x: hidden;
+    }
+
+    .img-solar {
+      height: 100px;
+      width: 200px;
+      margin: auto;
+      align-self: auto;
+    }
+
+    .imgcommon {
+      width: 258px;
+      height: 210px;
+      border-radius: 20px;
+    }
+
+    .img-leader {
+      height: 100px;
+      width: 200px;
+      margin: auto;
+      align-self: auto;
+
+    }
+
+    .img-womengreen {
+      width: 258px;
+      height: 210px;
+      border-radius: 20px;
+
+    }
+
+    .img-solar {
+      width: 258px;
+      height: 210px;
+      border-radius: 20px;
+    }
+
+    .img-blog {
+      /* display: block; */
+      height: 320px;
+      width: auto;
+    }
+
+    .jumbotron {
+      background-color: rgba(43, 122, 43, 0.151);
+      margin: 10px 70px;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+      text-decoration: none;
+      /* Remove underlines */
+      color: inherit;
+      /* Inherit color from parent */
+    }
+
+    #blog-section {
+      margin-top: 30px;
+    }
+
+    .col-sm-3 {
+      padding: 10px;
+      border-radius: 30px;
+      border-color: #4c862d;
+      border-width: 1px;
+      border-style: solid;
+      margin-right: 10px;
+      margin-left: auto;
+      margin-bottom: 30px;
+      cursor: pointer;
+      align-content: center;
+    }
+
+    .col-sm-3:hover {
+      background-color: #fff;
+      padding: 15px;
+    }
+
+    .reddit{
+      border: 0px;
+      background-color: #4c862d;
+      padding: 20px;
+      color: #fff;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      margin-left: 40px;
+      cursor: pointer;
+    }
+
+    .reddit:hover{
+      background-color: antiquewhite;
+      font-size: 20px;
+      color: #4c862d;
+    }
+
+    footer {
+      background-color: #4c862d;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      margin: 0px;
+    }
+
     
-    <link rel="stylesheet" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Blog</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgba(43, 122, 43, 0.151);
-            overflow-x: hidden;
-        } 
-        .img-solar{
-          height:100px;
-            width:200px;
-            margin:auto;
-            align-self: auto;
-        }  
-        .imgcommon{
-          height:100px;
-            width:200px;
-            margin:auto;
-            align-self: auto;
-          
-        }
-        .img-leader{
-          height:100px;
-            width:200px;
-            margin:auto;
-            align-self: auto;
-
-        }
-        .img-womengreen{
-          height:100px;
-            width:200px;
-            margin:auto;
-            align-self: auto;
-
-        }
-        .img-solar{
-            height:120px;
-            width:300px;
-            margin:auto;
-            align-self: auto;
-
-        }
-        .img-blog {
-            margin:  auto;
-            display: block;
-            height:320px;
-            width:1380px;
-        }
-        .Blogpara{
-            margin: 0 auto;
-        }
-    
-        a, a:hover, a:focus, a:active {
-    text-decoration: none; /* Remove underlines */
-    color: inherit; /* Inherit color from parent */
-}
-
-
-        footer {
-            background-color: #4c862d;
-            color: #fff;
-            text-align: center;
-        }
-    </style>
+  </style>
 </head>
 
 <body class="sub_page">
-    <div class="hero_area">
-        <header class="header_section">
-          <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg custom_nav-container">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/logo-1.png" alt="">
-                        <span>
-                          Evergreen
-                        </span>
-                      </a>
-                    <button class="navbar-toggler" 
-                    type="button" 
-                    data-toggle="collapse" 
-                    data-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  ">
-                          <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="About_us.html"> About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="Blog.html"> Blog </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="consultation_services.html"> Services </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="Partners.html"> Partnerships </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="Products.html"> Products</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="Future_Events.html"> Events </a>
-                          </li>
-                        </ul>
-                        <!-- <div class="user_option">
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo-1.png" alt="">
+            <span>
+              Evergreen
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About_us.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html"> Blog </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="consultation_services.html"> Services </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Partners.html"> Partnerships </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Products.html"> Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Future_Events.html"> Events </a>
+              </li>
+            </ul>
+            <!-- <div class="user_option">
                           <a href="">
                             <span>
                               contact
@@ -133,24 +186,24 @@
                             <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
                           </form>
                         </div> -->
-                      </div>
-                      <div>
-                        <div>
-                            <div class="custom_menu-btn ">
-                              <button>
-                                <span class=" s-1">
+          </div>
+          <div>
+            <div>
+              <div class="custom_menu-btn ">
+                <button>
+                  <span class=" s-1">
 
-                                </span>
-                                <span class="s-2">
+                  </span>
+                  <span class="s-2">
 
-                                </span>
-                                <span class="s-3">
+                  </span>
+                  <span class="s-3">
 
-                                </span>
-                              </button>
-                            </div>
-                          </div>
-                    <!-- <ul>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <!-- <ul>
                         <li><a href="#home"></a>Home</li>
                         <li><a href="#about"></a>About</li>
                         <li><a href="#blog"></a>Blog</li>
@@ -159,46 +212,111 @@
                         <li><a href="#products"></a>Products</li>
                         <li><a href="#events"></a>Events</li>
                     </ul> -->
-              
-            </header>
 
-    <!-- <img src= "images/blog.jpg" class="img-blog">
-    <img src= "images/blog.png" class="img-blog"> -->
-    <img src= "images/Bloghtml.png" class="img-blog">
+    </header>
 
-    <div class="Blogpara">
-       <b> <h1 style="color:rgb(10, 14, 11); text-align:center;font-family:  Georgia, 'Times New Roman', Times, serif;">Welcome to the Blog!!</h1> </b>
-        <b style= "color:rgb(10, 14, 11);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;"> The blog is a welcoming place for old and new comers into green energy world and green technologies. 
-            This is a simple platform that will give you access to a community that will help you where needed, 
-            access unlimited knowledge about solar panel installation and maintenance, and recommend solutions to your problems.</p>
-        
-        <!-- Articles Section -->
-<h1 style= "text-align:left;color:rgb(10, 14, 11);font-family:  Georgia, 'Times New Roman', Times, serif;">Stay Informed on Sustainable Energy: Latest Energy News In Africa!</h1>
-        <!-- Add your articles here -->
-        <br></b>
-        <ul>
-            <img src= "./images/solarint.png" class="img-solar">
-            <li><a href= "https://www.greenandprosperous.com/blog/10-crucial-mistakes-you-must-avoid-when-installing-solar-panels"target="_blank" rel="noopener noreferrer" style= "color:rgb(2, 66, 5);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;">Crucial Mistakes To Avoid While Installing Solar Panels</a></li>
-            <img src= "./images/women.green.png" class="img-solar">
-            <li><a href="https://www.energyconnects.com/opinion/thought-leadership/2024/march/women-in-energy-busting-some-myths-on-what-gets-them-in-and-moves-them-up/"target="_blank" rel="noopener noreferrer" style= "color:rgb(2, 66, 5);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;">Women in Energy: Busting Some Myths on What Gets Them In and Moves Them Up</a></li>
-            <img src= "./images/leadershipeypt.jpg" class="img-solar">
-            <li><a href="https://www.energyconnects.com/opinion/thought-leadership/2024/march/building-a-diversified-and-resilient-energy-mix-in-africa-lessons-from-egypes-2024/"target="_blank" rel="noopener noreferrer" style= "color:rgb(2, 66, 5);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;">Building a Diversified and Resilient Energy Mix in Africa: Lessons from Egypt's 2024</a></li>
-            <img src= "./images/commonenergy.jpg" class="img-solar">
-            <li><a href="https://www.energyconnects.com/opinion/features/2024/february/opec-and-africa-hold-dialogue-to-address-common-energy-challenges/"target="_blank" rel="noopener noreferrer"style= "color:rgb(2, 66, 5);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;">OPEC and Africa Hold Dialogue to Address Common Energy Challenges</a></li>
-        </ul>
-       <b> <h2 style="color:rgb(10, 14, 11); text-align:left;font-family:  Georgia, 'Times New Roman', Times, serif;">Click the link below to access the Reddit community!!!</h2> </b>
-    <ul>
-            <li><a href="//www.reddit.com/r/EverGreenAfrica/" target="_blank" rel="noopener noreferrer" style= "color:rgb(2, 66, 5);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;">r/EverGreenAfrica</a></li>
-        </ul>
+    <!-- introduction to blog page text -->
+    <div class="jumbotron text-center">
+
+      <!-- blog header image -->
+      <img src="images/Bloghtml.png" class="img-blog">
+
+      <br>
+      <br>
+      <br>
+      <b>
+        <h1 style="color:rgb(10, 14, 11); text-align:center;font-family:  Georgia, 'Times New Roman', Times, serif;">
+          Welcome to the Blog!!</h1><br>
+      </b>
+      <b
+        style="color:rgb(10, 14, 11);text-align:center; font-size: medium;font-family: Georgia, 'Times New Roman', Times, serif;">
+        The blog is a welcoming place for old and new comers into green energy world and green technologies.
+        This is a simple platform that will give you access to a community that will help you where needed,
+        access unlimited knowledge about sustainale energies like biofuels, wind, hydropower, biomass and recommended
+        solutions to your
+        problems.</p>
     </div>
+
+    <div id="blog-section">
+      <!-- Articles Section -->
+      <h4 style="text-align:center; color:rgb(10, 14, 11);font-family:  Georgia, 'Times New Roman', Times, serif;">Stay
+        Informed on Sustainable Energy: Latest Energy News In Africa!</h1><br><br>
+
+        <!-- blog posts -->
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-3">
+              <a href="https://www.greenandprosperous.com/blog/10-crucial-mistakes-you-must-avoid-when-installing-solar-panels"
+                target="_blank" rel="noopener noreferrer"><img src="./images/solarint.png" class="img-solar"></a><br>
+              <br>
+              <p>Mistakes To Avoid While Installing Solar Panels</p>
+
+            </div>
+
+            <div class="col-sm-3">
+              <a href="https://www.energyconnects.com/opinion/thought-leadership/2024/march/women-in-energy-busting-some-myths-on-what-gets-them-in-and-moves-them-up/"
+                target="_blank" rel="noopener noreferrer"><img src="./images/leadershipeypt.jpg"
+                  class="img-solar"></a><br><br>
+              <p>Building a Diversified and Resilient Energy Mix in Africa: Lessons from Egypt's 2024</p>
+            </div>
+
+            <div class="col-sm-3">
+              <a href="https://www.energyconnects.com/opinion/features/2024/february/opec-and-africa-hold-dialogue-to-address-common-energy-challenges/"
+                target="_blank" rel="noopener noreferrer"><img src="./images/commonenergy.jpg" class="img-solar"></a><br><br>
+              <p>OPEC and Africa Hold Dialogue to Address Common Energy Challenges</p>
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- second row -->
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-3">
+              <a href="https://www.sciencedirect.com/science/article/pii/S2590174520300362"
+                target="_blank" rel="noopener noreferrer"><img src="./images/biofuel.webp" class="img-solar"></a><br>
+              <br>
+              <p>How biofuels are made: why should countires lean towards biofuels?</p>
+
+            </div>
+
+            <div class="col-sm-3">
+              <a href="https://www.quora.com/How-large-of-an-impact-can-converting-waste-biomass-to-fuel-contribute-to-solving-the-climate-crisis"
+                target="_blank" rel="noopener noreferrer"><img src="./images/biomass.jpg"
+                  class="img-solar"></a><br><br>
+              <p>Why mess up earth when we can convert all those waste to biomass</p>
+            </div>
+
+            <div class="col-sm-3">
+              <a href="https://insideclimatenews.org/news/06122023/fossil-fuel-treaty-could-support-paris-agreement/"
+                target="_blank" rel="noopener noreferrer"><img src="./images/fossil.jpg" class="img-solar"></a><br><br>
+              <p>How a Fossil Fuel Treaty Could Support the Paris Agreement and Wind Down Production
+
+          </div>
+        </div>
+
+
+
+    
+      </div>
+
+      <br><br>
+      <button class="reddit"> <a href="//www.reddit.com/r/EverGreenAfrica/" target="_blank" rel="noopener noreferrer">Join our Reddit Community!!</a></button> <br>
+
+    </div>
+
+
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 EverGreen Africa. All rights reserved. Contact Us: info@EverGreenAfrica.com</p>
+      <p>&copy; 2024 EverGreen Africa. All rights reserved. <br><br> Contact Us: info@EverGreenAfrica.com</p>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
-  
+
 </body>
 </html>
