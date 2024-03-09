@@ -5,136 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: gainsboro;
+      font-family: "Playfair Display" sans-serif;
+    }
     .container {
-  background-image: url(https://media.licdn.com/dms/image/D5612AQHI3KKASfW3XA/article-cover_image-shrink_600_2000/0/1690543195145?e=2147483647&v=beta&t=nsxMH4DhVfXseLSiFcslNHgVyC9KeMQe7VG7R3asu50);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 70vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+      background-image: url(https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=600);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 70vh;
+      width: 100vw;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Poppins" sans-serif;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
 
-#bigFont {
-  font-size: 35px;
-  margin-bottom: 10px;
-  font: bold;
-  margin-left: 10px;
-  color: green;
-  font-weight: bold;
-}
+    h4 {
+      background-color: green;
+      color: white;
+      text-align: left;
+      padding: 15px;
+      border-radius: 0px;
+      margin-top: 10px;
+      text-align: center;
+      width: 100vw;
+    }
 
-#smallFont {
-  font-size: 20px;
-  font-style: normal;
-  margin-left: 10px;
-  color: green;
-  font-weight: bold;
-}
+    .img-1 {
+      width: 300px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      margin-top: 30px;
+      border: solid;
+      box-shadow: 12px 12px 2px 1px rgba(0, 0, 150, 0.2);
+    }
 
-p {
-  font-size: 15px;
-  font-style: normal;
-  margin-left: 10px;
-  margin-top: 20px;
-  padding-inline: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  font-weight: bold;
-}
-
-h4 {
-  background-color: green;
-  color: white;
-  text-align: left;
-  padding: 15px;
-  border-radius: 0px;
-  margin-top: 0px;
-  text-align: center;
-  width: 100vw;
-}
-
-.image-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.image-frame {
-  border: 5px solid green;
-  padding: 10px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.price {
-  font-weight: bold;
-  color: black;
-}
-
-.description {
-  font-style: bold;
-  color: black;
-}
-
-footer {
-  background-color: green;
-  padding: 30px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  color: white;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
+    footer {
+      background-color: green;
+      padding: 30px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: white;
+    }
   </style>
   <body>
     <div class="container">
-      <div>
-        <header>
-          <span id="bigFont">Evergreen Africa Marketplace</span> <br />
-          <span id="smallFont">Your Sustainable Energy Solutions Await.</span>
-        </header>
-        <p>
-          Explore seemless access to our affordable solar panels,
-          energy-efficient appliances, and other eco-friendly technologies. Our
-          goal is to reduce gas emissions, embrace green energy in promoting
-          sustainability and build a resilient future.
-        </p>
-      </div>
+      <h1>Evergreen Africa Marketplace</h1>
+      <h3>Your Sustainable Energy Solutions Await.</h3>
     </div>
+    <p>
+      Explore seemless access to our affordable solar panels, energy-efficient
+      appliances, and other eco-friendly technologies. Our goal is to reduce gas
+      emissions, embrace green energy in promoting sustainability and build a
+      resilient future.
+    </p>
     <h4>
       Evergreen Africa is your number one choice of green energy solutions.
       Contact us now!
     </h4>
 
-    <main>
-      <div class="image-container">
-        <div class="image-frame">
-          <img src="data:image/jpeg;base64,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" alt="20wp solar panel" />
-            <p class="price">N150,000</p>
-            <p class="description">20WP Solar Panel</p>
-        </div>
-
-       <div class="image-container">
-        <div class="image-frame"> <img src="data:image/jpeg;base64,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" alt="solar camera" />
-            <p class="price">N250,000</p>
-            <p class="description">Solar Power 4G PTZ Camera</p>
-        </div>
+    <div class="d-flex justify-content-around">
+      <div class="g-col-6 g-col-md-4">
+        <img
+          src="https://www.engineersireland.ie/Portals/0/a1-4rWJHBo7CGkJXuSIjakUAn2xTuCAlSqrSuTQNnyn.jpg"
+          alt="geo"
+          class="img-1"
+        />
+        <p class="price">Price :$25 000 Installation price</p>
+        <p class="description">
+          Geothermal energy is a renewable energy source because heat is
+          continuously produced inside the earth.
+        </p>
       </div>
-    </main>
+      <div class="col-6 g-col-md-4">
+        <img
+          src="https://www.energy.gov/sites/default/files/styles/full_article_width/public/Biomass%20Resources.png?itok=7msmb1_6"
+          alt="biomass"
+          class="img-1"
+        />
+        <p class="Price">Price: $10 000</p>
+        <p class="description">Installation :Bioenergy Basics</p>
+      </div>
+      <div class="g-col-6 g-col-md-4">
+        <img
+          src="https://5.imimg.com/data5/SELLER/Default/2021/7/QI/XQ/MF/91210279/rohrturbine-jpg-500x500.jpg"
+          alt="water-turbine"
+          class="img-1"
+        />
+        <p class="price">Price:$1500</p>
+        <p class="description">
+          under water Inpipe Turbine - Hydrokinetic, 5 kW Hydro
+          Turbine-generator
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around">
+      <div class="g-col-6 g-col-md-4">
+        <img
+          src="https://image.slidesdocs.com/responsive-images/background/3d-image-of-a-revolutionary-water-turbine-technology-for-generating-renewable-energy-from-the-sea-powerpoint-background_c5b57b67b9__960_540.jpg"
+          alt="turbines"
+          class="img-1"
+        />
+        <p class="Price">Price: $5000</p>
+        <p class="descripton">
+          Water turbine is used to convert energy contained in water, potential
+          energy or kinetic energy, into mechanical or electrical energy
+        </p>
+      </div>
+      <div class="g-col-6 g-col-md-4">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEDbjf1725m8mcTJA1wfX2jb3aEg1tJaxg4g&usqp=CAU"
+          alt="wind-turbine"
+          class="img-1"
+        />
+        <p class="price">Price: $1000</p>
+        <p class="description">
+          A wind turbine turns wind energy into electricity using the
+          aerodynamic force from the rotor blades, which work like an airplane
+          wing or helicopter rotor blade.
+        </p>
+      </div>
+      <div class="g-col-6 g-col-md-4">
+        <img
+          src="https://www.miningreview.com/wp-content/uploads/2018/02/Renewable-Energy-NEW.jpg"
+          alt=""
+          class="img-1"
+        />
+        <p class="Price">Price: $500</p>
+        <p class="description">
+          Sustainability practice of green energy key for mining companies
+        </p>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -143,8 +172,3 @@ footer {
     </footer>
   </body>
 </html>
-
-
-
-
-
