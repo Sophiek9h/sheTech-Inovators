@@ -28,6 +28,10 @@ header h1 {
   letter-spacing: 2px;
 }
 
+.cs-logo {
+  height: 80px;
+}
+
 .container {
   max-width: 1200px;
   margin: 20px auto;
@@ -78,6 +82,7 @@ header h1 {
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -94,9 +99,14 @@ footer {
         color: #ffffff;
       }
 
+form {
+  margin top: 20px;
+}
+
   </style>
   <body>
     <header>
+      <img src="images/logo-1.png" class="cs-logo">
       <h1>Consultation Services</h1>
     </header>
     <div class="container">
@@ -110,7 +120,7 @@ footer {
             footprint.
           </p>
           <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="text" name="name" placeholder="Your Name" required /><br>
             <input
               type="email"
               name="email"
