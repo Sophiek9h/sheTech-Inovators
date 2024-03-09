@@ -938,6 +938,55 @@
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
+.client_section .heading_container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 25px;
+}
+
+.client_section .detail-box {
+  text-align: center;
+  margin: 25px 35px;
+  padding: 45px 65px 35px 65px;
+  -webkit-box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.client_section .detail-box h4 {
+  font-weight: bold;
+}
+
+.client_section .detail-box p {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.client_section .carousel-control-prev,
+.client_section .carousel-control-next {
+  top: 50%;
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 100%;
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: center;
+  background-color: #1a2e35;
+  margin: 2px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.client_section .carousel-control-prev {
+  background-image: url(../images/prev-angle.png);
+}
+
+.client_section .carousel-control-next {
+  background-image: url(../images/next-angle.png);
+}
+
 /* info section */
 .info_section {
   position: relative;
